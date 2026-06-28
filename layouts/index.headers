@@ -1,0 +1,5 @@
+{{ $scriptSrcElem := partial "scriptHashes.html" -}}
+{{ $styleSrcElem := partial "styleHashes.html" -}}
+/*
+  Content-Security-Policy: script-src-elem {{ $scriptSrcElem }}; style-src-elem {{ $styleSrcElem }}
+

@@ -1,0 +1,18 @@
+module:
+  imports:
+    disable: false
+    path: "github.com/oschmid/csp-inline-hashes"
+params:
+  cspInlineHashes:
+    minify: "auto"
+    algo: "sha256"
+outputs:
+  home:
+    - HTML
+    - HEADERS
+outputFormats:
+  HEADERS:
+    baseName: "_headers"
+    isPlainText: true
+    notAlternative: true
+

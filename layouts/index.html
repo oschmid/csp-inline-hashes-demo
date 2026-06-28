@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  {{ with partial "style.html" . }}
+    body{background-color:green;}
+  {{ end }}
+  </head>
+  <body>
+    <a href="/_headers">_headers</a>
+    <div id="hello"></div>
+    {{ with partial "script.html" . }}
+      document.getElementById("hello").innerText = "Hello World";
+    {{ end }}
+  </body>
+</html>
+
